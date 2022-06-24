@@ -1,0 +1,25 @@
+<div class="container">
+
+    <h1>Listado de libros</h1>
+
+    <hr>
+
+    {{#each books}}
+
+    <article>
+
+        <a href="/libros/detalles/{{id}}">{{title}}</a>
+
+        <a href="/libros/editar/{{id}}" class="btn btn-warning btn-sm">editar</a>
+
+        <form action="/libros/eliminar/{{id}}" method="POST" style="display: inline-block">
+            <input type="submit" value="eliminar" class="btn btn-danger btn-sm">
+        </form>
+
+        <hr>
+
+    </article>
+
+    {{/each}}
+
+</div>

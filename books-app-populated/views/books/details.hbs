@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>Detalles de {{title}}</h1>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-md-6">
+            <p>Sinopsis: {{description}}</p>
+            <p>Puntuación: {{rating}}</p>
+        </div>
+        <div class="col-md-6">
+            Autores/as:
+            {{#each author}}
+            <article>
+                <img src="{{pictureUrl}}" alt="{{name}}" style="width: 100%">
+                {{name}} {{lastName}} ({{nationality}})
+            </article>
+            {{/each}}
+
+        </div>
+    </div>
+
+
+    <hr>
+
+    <a href="/libros/listado" class="btn btn-dark">Volver al listado</a>
+</div>
