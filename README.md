@@ -4,6 +4,10 @@
 >
 > Node | Basic Authorization, Autentication & Sessions
 
+## Main points: POST requests
+- Las peticiones de tipo POST pueden ser realizadas desde formlarios con el atributo `method="POST"`
+- El objeto `req.body` contiene la información enviada mediante una petición de tipo `POST`.
+- Cada clave del objeto es el valor del atributo `name` del `input`, asumiendo como su valor el del propio `input`.
 
 ## Main points: document relationships (populating)
 
